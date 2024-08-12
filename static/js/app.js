@@ -212,22 +212,3 @@ function gaugeChart(sampleID) {
         }
    };
 
-    // Create the data array for the bar chart
-    let dataGauge = [traceGauge];
-
-    // Set layout details for the bar chart
-    let layoutGauge = {
-        width: 400,
-        height: 400,
-        margin: { t: 25, r: 25, l: 25, b: 25 },
-      };
-    
-    // Render the plot to the div tag with id "gauge"
-    Plotly.newPlot("gauge", dataGauge, layoutGauge);
-    
-  });
-};
-
-
-// Call the initialization function
-init();
